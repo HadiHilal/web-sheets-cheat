@@ -1,0 +1,128 @@
+                                    <!--- HTML5 sheet--->
+
+<!DOCTYPE html>
+
+    <html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>Title</title>
+
+        <script src="html5shive"></script>  <!--- we use html5shiv to support old browser !---->
+
+    </head>
+
+    <body>
+
+
+    <abbr title="-"> - </abbr>  <!--- this tag to caption the element !---->
+
+    <progress value="number" max="number"> </progress>  <!--- this tag to count value !---->
+
+    <meter min="0" max="1" value=".number" low=".number" high=".number" > </meter> <!--- this tag to count value !---->
+
+    <details> <summary> </summary></details>  <!--- this tag to give details !---->
+
+    <mark></mark>  <!--- this tag to mark element !---->
+
+    <br> = <wbr>   <!--- this tag to break element to new line  !---->
+
+    &lt; element &gt;  <!--- this tag to show element in the browser  !---->
+
+    <time datetime="2017-9-10"> 2017-9-10 </time> <!--- this tag to show time !---->
+
+    <dialog open></dialog> <!--- this tag show dialog same box !---->
+
+    <bdi></bdi> <!-- this tag use to isolate element from direction example whe we use arabic in english website -->
+
+    <form>
+
+        <input list=""/>
+
+        <datalist>
+
+            <option value="">  <option value="">  <option value="">
+
+        </datalist>
+
+    </form>
+
+    <form class="" action="url" method="get"> <!--- this tag form and we use action to send data to url -->
+
+    <input type="file" multiple> <!-- this tag use to upload file and we use multiple to upload more files  -->
+
+    <input type="number" name="number" min="number" max="number"> <!--- this tag to set number and we use max and min -->
+
+     <input type="text" pattern="[a-z][7]" required>
+
+    </form>
+
+
+                                       <!--- Svg-->
+
+    <svg width="" height="" > <!--- this tag to draw vector img -->
+
+    <rect  x="" y="" rx="like border radius in x" ry="like border radius in y" height="" width="" fill="color here"/>
+
+        <!--- this tag to draw rectangle-->
+
+        <circle r="" cx="" cy=""  fill="" stroke="" stroke-width=""/> <!--- this tag to draw circle-->
+
+        <ellipse rx=""  ry="" cx="" cy=""  fill="" stroke="" stroke-width=""/> <!--- this tag to draw ellipse-->
+
+        <line x1="" y1="" x2="" y2="" fill="" />  <!--- this tag to draw line-->
+
+    </svg>
+
+
+                                         <!--- Canvas-->
+    <canvas id="c">
+       <script>
+
+           let c = document.querySelector("#c");
+           let ctx = c.getContext("2d");
+
+           ctx.fillstyle ="color" ;                                // this tag to color canvas
+           ctx.fillrect("x , y ,width ,height");                  //this style to draw rectangle
+           ctx.strokestyle ="color";                             // this tag to color stroke
+           ctx.strokerect(x,y,height,width);                    //this style to draw  stroke rectangle
+           ctx.clearRect(0, 0, c.width, c.height);             //If you want to erase the entire canvas, you could call
+           ctx.linewidth = number;                            //this style to draw width stroke rectangle
+
+           // drawing line in the canvas
+
+           ctx.moveto(x,y);
+           ctx.lineto(x,y);
+           ctx.stroke();
+           ctx.filltext(name,x,y);                                  // this tag to draw text
+           ctx.stroketext(name,x,y);                               // this tag to outline text
+
+                                          // Scaling
+           scale(x,y) ;                                      // multiplies the x and y values by a given factor so
+
+           ctx.scale(2,3);
+
+
+                                          // Translation
+           translate(x,y) ;                        //moves all subsequent draw commands by x number of pixels on horizontally and y pixels vertically.
+
+           ctx.translate(20,40);                  //moves all elements drawn after it 20 pixels to the rights and 40 pixels down.
+
+                                           // Rotation
+           ctx.rotate(angleRadians);            // rotates an object a certain number of radians (generally) about its center. You may have learned about radians in school but here's a handy formula to convert a value from degrees to radians.
+
+           radians = degrees * (Math.PI/180);
+
+       </script>
+
+    </canvas> <!--- this tag canvas-->
+</body>
+</html>
+
+                                            <!--- Created By Hadi Hilal-->
+
+
+
+

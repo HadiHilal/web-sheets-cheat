@@ -1,0 +1,122 @@
+                                    <!--- Bootstrab sheet--->
+
+<!DOCTYPE html>
+
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <!--- very important to use this meta with bootstrab  -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Title</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+
+                                       <!--- container  -->
+     <!--- we have 2 class container and container-fluid we should use one of them to be parent of the element -->
+     <div class="container"> </div>
+     <div class="container-fluid"> </div>
+
+
+                                       <!--- Grid system  -->
+      <div class="row">
+        <!--- we use class 'row' for grid system  -->
+
+        <!--note 1 : we have 4 sizes in bootstrab xl=xlarge , lg=large , md=madium  , sm= smal --->
+        <!--note 2 : in bootstrab 4 version we dont have xsmal size so we use col --->
+        <!--note 3 : the grid in bootstrab divided to 12 size--->
+        <!---example-->
+        <div class="col-lg-3 col-md-6 col-sm-12 col"> ex </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 col"> ex </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 col"> ex </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 col"> ex </div>
+      </div>
+
+
+                                       <!--- Variable width content  -->
+
+        <!--- we use class 'align-items-starts' to arrange the element from start -->
+        <!--- we use class 'align-items-center' to arrange the element from center -->
+        <!--- we use class 'align-items-end' to arrange the element from end -->
+
+        <!--- we use class 'align-self-starts' to arrange the element from start -->
+        <!--- we use class 'align-self-center' to arrange the element from center -->
+        <!--- we use class 'align-self-end' to arrange the element from end -->
+
+        <!--- we use class 'align-justify-start' to arrange the element from start -->
+        <!--- we use class 'align-justify-center' to arrange the element from center -->
+        <!--- we use class 'align-justify-end' to arrange the element from end -->
+         <div class="row align-items-start"></div>
+
+                                       <!--- Alerts  -->
+        <!--- we use class "alert alert-primary" to give us alert with blue color  -->
+        <!--- we use class "alert alert-secondary" to give us alert with greay color  -->
+        <!--- we use class "alert alert-success" to give us alert with green color  -->
+        <!--- we use class "alert alert-danger" to give us alert with red color  -->
+        <!--- we use class "alert alert-warning" to give us alert with yelow color  -->
+
+       <div class="alert alert-success" role="alert">
+           <h4 class="alert-heading">Well done!</h4>
+           <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+           <hr>
+           <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+       </div>
+
+                                       <!--- Badges  -->
+
+       <!--- we use class "badge badge-primary"   to be used as part of links or buttons to provide a counter with blue color   -->
+       <!--- we use class "badge badge-secondary" to be used as part of links or buttons to provide a counter with gray color  -->
+       <!--- we use class "badge badge-success"   to be used as part of links or buttons to provide a counter with green color  -->
+       <!--- we use class "badge badge-danger"    to be used as part of links or buttons to provide a counter with red color    -->
+       <!--- we use class "badge badge-warning"   to be used as part of links or buttons to provide a counter with yalow color  -->
+
+
+                                       <!--- Breadcrumb  -->
+      <!--- we use this class to Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS -->
+
+       <nav aria-label="breadcrumb">
+           <ol class="breadcrumb">
+               <li class="breadcrumb-item"><a href="#">Home</a></li>
+               <li class="breadcrumb-item active" aria-current="page">Library</li>
+           </ol>
+       </nav>
+                                       <!--- Buttons  -->
+
+     <!--- Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control -->
+
+       <button type="button" class="btn btn-primary btn-lg">    Primary</button>         <!--- large blue btn  -->
+       <button type="button" class="btn btn-secondary btn-sm">  Secondary</button>       <!--- small gray btn -->
+       <button type="button" class="btn btn-success btn-lg" >   Success</button>         <!--- green btn -->
+       <button type="button" class="btn btn-danger btn-lg">     Danger</button>          <!--- red btn -->
+       <button type="button" class="btn btn-warning btn-lg">    Warning</button>         <!--- yalow btn -->
+       <button type="button" class="btn btn-info btn-lg">       Info</button>            <!--- cyan btn -->
+       <button type="button" class="btn btn-light btn-lg ">     Light</button>           <!--- white btn -->
+       <button type="button" class="btn btn-dark btn-lg">       Dark</button>            <!--- black btn -->
+
+       <button type="button" class="btn btn-link btn-lg">       Link</button>            <!--- link btn -->
+
+
+
+
+
+
+    <!--- very important jquery library with bootstrab -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!--- very important popper js with bootstrab -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
+
+                                            <!--- Created By Hadi Hilal-->
+
+
+
